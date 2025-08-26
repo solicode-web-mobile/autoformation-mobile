@@ -1,14 +1,12 @@
 ---
-title: Comprendre le maquettage
-permalink: /comprendre-maquettage/
+title: Analyse du besoin 
+permalink: /analyse-besoin/
 layout: home
-nav_order: 11
+nav_order: 1
 has_children: true
 ---
 
 # 🎓 Comprendre le maquettage
-
-![comprendre-maquettage](../assets/images/1.1.comprendre-maquettage-350.png)
 
 Le maquettage constitue la **première étape essentielle** dans la conception d’un site ou d’une application web. Avant même d’écrire une ligne de code, il permet de **visualiser et structurer les idées** sous forme de schémas simples (wireframes), facilitant ainsi la communication entre les différentes parties prenantes (client, chef de projet, designer, développeur).
 

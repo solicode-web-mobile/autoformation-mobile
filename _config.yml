@@ -63,4 +63,5 @@ callouts:
     title: Warning
     color: red
 
- 
+just_the_docs:
+  mermaid: true
