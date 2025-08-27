@@ -15,9 +15,6 @@ alimentation_prototype: "Oriente la priorisation des fonctionnalités (filtre 'P
 alimentation_miniprojet: "Structure le backlog MVP et les critères de validation du mini-projet Blog"
 ---
 ```
-
-
-
 ```yaml
 ---
 title: 2. Problem statement & métriques de succès
@@ -35,9 +32,6 @@ alimentation_prototype: "Guide l’instrumentation (événements/mesures) et le 
 alimentation_miniprojet: "Fournit les indicateurs de succès et les cibles chiffrées à suivre dans le mini-projet N3"
 ---
 ```
-
-
-
 ```yaml
 ---
 title: 3. User stories au format GWT
@@ -55,9 +49,6 @@ alimentation_prototype: "Fournit les cas de test (GWT) servant de DoD pour le pr
 alimentation_miniprojet: "Alimente le backlog et la traçabilité des tests d’acceptation du mini-projet N3"
 ---
 ```
-
-
-
 ```yaml
 ---
 title: 4. Backlog MVP priorisé (MoSCoW)
@@ -75,9 +66,6 @@ alimentation_prototype: "Fige le périmètre Must du prototype v0.1 (parcours mi
 alimentation_miniprojet: "Donne la feuille de route N3 (items Should/Could/Won’t reportés en itérations)"
 ---
 ```
-
-
-
 ```yaml
 ---
 title: 5. Acteurs & 3 UC principaux
@@ -95,9 +83,6 @@ alimentation_prototype: "Définit les UC et écrans brique-de-base à implément
 alimentation_miniprojet: "Stabilise le périmètre fonctionnel et la documentation UC pour le mini-projet N3"
 ---
 ```
-
-
-
 ```yaml
 ---
 title: 6. Mini-matrice stories ↔ UC ↔ écrans
@@ -115,7 +100,4 @@ alimentation_prototype: "Sert de checklist de démo et de vérification de couve
 alimentation_miniprojet: "Documente la traçabilité complète (Stories↔UC↔Écrans/Endpoints) exigée au N3"
 ---
 ```
-
-
-
 > Repérage UA par chapitre conforme au référentiel C1.1 (U1: 1.1.1–1.1.2, U2: 1.1.3–1.1.4, U3: 1.1.5–1.1.6).&#x20;

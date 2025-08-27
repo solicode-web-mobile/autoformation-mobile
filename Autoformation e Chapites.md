@@ -28,9 +28,6 @@ Aux **débutants en développement web** ou en **design d’interfaces**, souhai
 - **Chapitre 3** : Outils de maquettage (1h)  
 - **Chapitre 4** : S’initier à Figma (1h)  
 - **Chapitre 5** : Créer une maquette simple (2h)
-
-
-
 # 1.2. Conception UI & maquettes
 
 La **conception UI** (interface utilisateur) transforme un besoin fonctionnel en **écrans clairs, cohérents et utilisables**. Elle s’appuie sur l’**architecture de l’information** (quels contenus ? où ?), la **navigation** (comment on s’y déplace ?) et des **wireframes low→mid** pour valider rapidement les choix avant le développement.  
@@ -76,10 +73,7 @@ Aux **débutants** en UI/UX et **développeurs** souhaitant cadrer l’interface
 - **Style v1** (typo, grille, composants)  
 - **Diagramme de classes minimal** (image/Mermaid)
 
-> Ces livrables serviront de base directe au **prototype HTML/CSS** et au **handoff** (Autoformation C1.3).
-
-
----
+> Ces livrables serviront de base directe au **prototype HTML/CSS** et au **handoff** (Autoformation C1.3).---
 title: 2.1. Schéma & Eloquent
 permalink: /schema-eloquent-bases/
 layout: home
@@ -873,10 +867,7 @@ sealed interface UiState<out T> {
 * Toujours prévoir un **chemin offline** : placeholder, *empty state*, **Retry**.
 * Tester vos flux avec **erreurs simulées** (mode avion, couper réseau, fausses URLs).
 
-> Prochaine étape : **5.4.1 — Rappels HTTP & schéma JSON** puis **5.4.2 — Retrofit + OkHttp + Moshi/Gson**.
-
-
----
+> Prochaine étape : **5.4.1 — Rappels HTTP & schéma JSON** puis **5.4.2 — Retrofit + OkHttp + Moshi/Gson**.---
 title: 6.1.Tests unitaires & d’intégration
 permalink: /tests-laravel/
 layout: home
@@ -1068,10 +1059,7 @@ layout: home
 nav_order: 3
 has_children: true
 parent : 7. Déploiement
----
-
-
-# 🌍 Introduction — C7.3 Serveur Web : principes & HTTP
+---# 🌍 Introduction — C7.3 Serveur Web : principes & HTTP
 
 Ce module explique **comment un serveur Web répond aux clients** via **HTTP/HTTPS**, les **méthodes** (`GET`, `POST`…), les **codes de statut** (`2xx/3xx/4xx/5xx`), les **en-têtes** (cache, CORS, auth) et la différence **statique vs dynamique** (ex. PHP/FPM). Il relie votre **réseau (C7.2)** aux **services applicatifs** et prépare la **mise en ligne (C7.4)**.
 

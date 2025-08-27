@@ -1,8 +1,5 @@
 
-- Donner le chapitre introduction comme 
-
-
-```md
+- Donner le chapitre introduction comme ```md
 ---
 title: 1.1. Analyse du besoin 
 permalink: /analyse-besoin/
@@ -41,7 +38,4 @@ Aux **débutants en développement web** ou en **design d’interfaces**, souhai
 - **Chapitre 3** : Outils de maquettage (1h)  
 - **Chapitre 4** : S’initier à Figma (1h)  
 - **Chapitre 5** : Créer une maquette simple (2h)
-```
-
-
-donner le résultat en format markwon
+```donner le résultat en format markwon
