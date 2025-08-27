@@ -1,9 +1,19 @@
+
+Travail à faire : 
+
+
+## Introduction 
+
+- Donner le chapitre introduction comme 
+
+
+
+```md
 ---
 title: 1.1. Analyse du besoin 
 permalink: /analyse-besoin/
 layout: home
 nav_order: 1
-parent: 1. Maquettage
 has_children: true
 ---
 
@@ -37,4 +47,7 @@ Aux **débutants en développement web** ou en **design d’interfaces**, souhai
 - **Chapitre 3** : Outils de maquettage (1h)  
 - **Chapitre 4** : S’initier à Figma (1h)  
 - **Chapitre 5** : Créer une maquette simple (2h)
+```
 
+
+donner le résultat en format markwon

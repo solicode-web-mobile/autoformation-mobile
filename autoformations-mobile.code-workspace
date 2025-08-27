@@ -5,7 +5,11 @@
 		},
 		{
 			"path": "../plan-formation-mobile/2.Autoformations"
-		}
+		},
+		{
+			"path": "../plan-formation-mobile/0.Assistant IA Pédagogique/1.Assistant IA Pédagogique"
+		},
+
 	],
 	"settings": {}
 }

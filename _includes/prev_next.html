@@ -1,0 +1,25 @@
+{% assign siblings = site.pages | where: "parent", page.parent | sort: "nav_order" %}
+{% assign index = nil %}
+
+{% for p in siblings %}
+  {% if p.url == page.url %}
+    {% assign index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if index != nil %}
+  {% assign prev_index = index | minus: 1 %}
+  {% assign next_index = index | plus: 1 %}
+
+  <div class="d-flex justify-between mt-5 mb-4">
+    {% if prev_index >= 0 %}
+      {% assign prev = siblings[prev_index] %}
+      <a href="{{ prev.url | relative_url }}" class="btn btn-outline">⬅️ {{ prev.title }}</a>
+    {% endif %}
+
+    {% if next_index < siblings.size %}
+      {% assign next = siblings[next_index] %}
+      <a href="{{ next.url | relative_url }}" class="btn btn-outline">{{ next.title }} ➡️</a>
+    {% endif %}
+  </div>
+{% endif %}
