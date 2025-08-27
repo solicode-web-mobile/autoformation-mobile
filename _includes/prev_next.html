@@ -1,151 +1,3 @@
-<style>
-/* -------- Chapitre: navigation prev/next -------- */
-
-/* Le conteneur : fonctionne avec ta classe existante
-   .d-flex.justify-between.mt-5.mb-4 mais ajoute aussi .chapter-nav si tu veux. */
-.d-flex.justify-between.mt-5.mb-4,
-.chapter-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 2rem;   /* fallback si mt-5 n’existe pas */
-  margin-bottom: 1.25rem; /* fallback si mb-4 n’existe pas */
-}
-
-/* Quand un seul lien (ex. seulement "suivant"), on l’aligne à droite. */
-.d-flex.justify-between.mt-5.mb-4 a:only-child,
-.chapter-nav a:only-child {
-  margin-left: auto;
-}
-
-/* Boutons (ciblage de tes classes actuelles + alias .btn-nav si tu changes un jour) */
-.d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline,
-.chapter-nav a.btn.btn-outline,
-.chapter-nav a.btn-nav {
-  --pn-border: #E5E7EB;      /* gris clair */
-  --pn-bg: #ffffff;
-  --pn-bg-hover: #f8fafc;
-  --pn-shadow: rgba(0,0,0,.05);
-  --pn-shadow-hover: rgba(0,0,0,.12);
-  --pn-accent: #1a73e8;      /* bleu "link" élégant */
-  --pn-radius: 12px;
-
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  text-decoration: none;
-  border: 1px solid var(--pn-border);
-  padding: .65rem 1rem;
-  border-radius: var(--pn-radius);
-  background: linear-gradient(180deg, var(--pn-bg) 0%, #fbfbfb 100%);
-  box-shadow: 0 1px 2px var(--pn-shadow);
-  font-weight: 600;
-  line-height: 1.25;
-  transition: transform 60ms ease, box-shadow .2s ease, border-color .2s ease, background-color .2s ease;
-}
-
-/* Icônes flèches un peu plus lisibles */
-.d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline .icon,
-.chapter-nav a.btn.btn-outline .icon,
-.chapter-nav a.btn-nav .icon {
-  font-size: 1.1em;
-}
-
-/* Hover / Focus */
-.d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline:hover,
-.chapter-nav a.btn.btn-outline:hover,
-.chapter-nav a.btn-nav:hover {
-  background: var(--pn-bg-hover);
-  border-color: #d9dde3;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px var(--pn-shadow-hover);
-}
-
-.d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline:focus-visible,
-.chapter-nav a.btn.btn-outline:focus-visible,
-.chapter-nav a.btn-nav:focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--pn-accent) 60%, white 40%);
-  outline-offset: 2px;
-}
-
-/* État actif (clic) */
-.d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline:active,
-.chapter-nav a.btn.btn-outline:active,
-.chapter-nav a.btn-nav:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px var(--pn-shadow);
-}
-
-/* Variante visuelle pour “précédent” et “suivant” (optionnelle) */
-.d-flex.justify-between.mt-5.mb-4 a:first-child,
-.chapter-nav a:first-child {
-  --pn-accent: #0ea5e9; /* léger différentiel à gauche */
-}
-.d-flex.justify-between.mt-5.mb-4 a:last-child,
-.chapter-nav a:last-child {
-  --pn-accent: #6366f1; /* léger différentiel à droite */
-}
-
-/* Petites étiquettes au-dessus (optionnel si tu ajoutes data-label) */
-.d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline[data-label]::before,
-.chapter-nav a.btn.btn-outline[data-label]::before,
-.chapter-nav a.btn-nav[data-label]::before {
-  content: attr(data-label);
-  display: block;
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .02em;
-  color: #6b7280;
-  margin-bottom: .15rem;
-}
-
-/* Mobile : les liens passent à la ligne, chacun prend sa place */
-@media (max-width: 640px) {
-  .d-flex.justify-between.mt-5.mb-4,
-  .chapter-nav {
-    flex-wrap: wrap;
-    gap: .75rem;
-  }
-  .d-flex.justify-between.mt-5.mb-4 a,
-  .chapter-nav a {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-/* Réduction des animations si l’utilisateur préfère */
-@media (prefers-reduced-motion: reduce) {
-  .d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline,
-  .chapter-nav a.btn.btn-outline,
-  .chapter-nav a.btn-nav {
-    transition: none;
-  }
-}
-
-/* (Option) Dark mode simple */
-@media (prefers-color-scheme: dark) {
-  .d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline,
-  .chapter-nav a.btn.btn-outline,
-  .chapter-nav a.btn-nav {
-    --pn-border: #2f3542;
-    --pn-bg: #1b1f24;
-    --pn-bg-hover: #22262c;
-    --pn-shadow: rgba(0,0,0,.4);
-    --pn-shadow-hover: rgba(0,0,0,.6);
-    color: #e5e7eb;
-  }
-  .d-flex.justify-between.mt-5.mb-4 a.btn.btn-outline[data-label]::before,
-  .chapter-nav a.btn.btn-outline[data-label]::before,
-  .chapter-nav a.btn-nav[data-label]::before {
-    color: #a1a1aa;
-  }
-}
-</style>
-
-
-
-
 {% assign siblings = site.pages | where: "parent", page.parent | sort: "nav_order" %}
 {% assign index = nil %}
 
@@ -159,15 +11,19 @@
   {% assign prev_index = index | minus: 1 %}
   {% assign next_index = index | plus: 1 %}
 
-  <div class="d-flex justify-between mt-5 mb-4">
+  <nav class="chapter-nav" role="navigation" aria-label="Navigation du chapitre">
     {% if prev_index >= 0 %}
       {% assign prev = siblings[prev_index] %}
-      <a href="{{ prev.url | relative_url }}" class="btn btn-outline">⬅️ {{ prev.title }}</a>
+      <a class="chapter-link prev" href="{{ prev.url | relative_url }}" aria-label="Chapitre précédent : {{ prev.title }}">
+        {{ prev.title }}
+      </a>
     {% endif %}
 
     {% if next_index < siblings.size %}
       {% assign next = siblings[next_index] %}
-      <a href="{{ next.url | relative_url }}" class="btn btn-outline">{{ next.title }} ➡️</a>
+      <a class="chapter-link next" href="{{ next.url | relative_url }}" aria-label="Chapitre suivant : {{ next.title }}">
+        {{ next.title }}
+      </a>
     {% endif %}
-  </div>
+  </nav>
 {% endif %}

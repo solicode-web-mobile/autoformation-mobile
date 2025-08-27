@@ -2,7 +2,52 @@
 layout: default
 ---
 
+<style>
+/* ---- Navigation chapitres (simple & propre) ---- */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .75rem;
+  margin: 2rem 0 1.25rem;
+  padding-top: .75rem;
+  border-top: 1px solid #e5e7eb;
+}
+.chapter-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .55rem .9rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #fff;
+  transition: background .2s ease, border-color .2s ease, transform .05s ease;
+}
+.chapter-nav a:hover { background: #f8fafc; border-color: #d9dde3; transform: translateY(-1px); }
+.chapter-nav a:active { transform: translateY(0); }
+.chapter-nav a:only-child { margin-left: auto; } /* s'il n'y a qu'un lien (ex. seulement “suivant”) */
+
+.chapter-link.prev::before { content: "←"; }
+.chapter-link.next::after  { content: "→"; }
+
+/* Mobile */
+@media (max-width:640px){
+  .chapter-nav { flex-wrap: wrap; }
+  .chapter-nav a { width:100%; justify-content:center; }
+}
+
+/* Dark (optionnel, minimal) */
+@media (prefers-color-scheme: dark){
+  .chapter-nav { border-top-color: #2f3542; }
+  .chapter-nav a { background:#1b1f24; color:#e5e7eb; border-color:#2f3542; }
+  .chapter-nav a:hover { background:#22262c; border-color:#3a4150; }
+}
+</style>
+
 <main class="page-content" aria-label="Content">
+   {% include prev_next.html %}
   <div class="main-content">
     {{ content }}
   </div>
