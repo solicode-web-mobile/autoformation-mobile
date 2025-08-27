@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../plan-formation-mobile/2.Autoformations"
 		}
 	],
 	"settings": {}
