@@ -1,9 +1,4 @@
 
-Travail à faire : 
-
-
-## Introduction 
-
 - Donner le chapitre introduction comme 
 
 
