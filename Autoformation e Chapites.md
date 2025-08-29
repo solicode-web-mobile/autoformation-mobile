@@ -635,7 +635,7 @@ Aux **débutants** en mobile et aux développeurs web souhaitant **valider l’e
 > Prochaine étape : **5.1.1 — Installer Android Studio & SDK, configurer émulateur/appareil (ADB)**.
 ---
 title: 5.2. Kotlin essentiel pour Android
-permalink: /kotlin-essentiel-android/
+permalink: /kotlin-essentiel/
 layout: home
 nav_order: 2
 parent: 5. Mobile
@@ -708,7 +708,7 @@ Aux débutants Android (ou développeurs venant du web) qui veulent **solidifier
 
 ---
 title: 5.3. Android avec Compose
-permalink: /android-compose-mvvm/
+permalink: /android-compose/
 layout: home
 nav_order: 3
 parent: 5. Mobile
@@ -780,7 +780,7 @@ Aux apprenants ayant un projet Android **opérationnel** et des bases Kotlin, so
 
 ---
 title: 5.4. Consommer une API
-permalink: /android-api-retrofit/
+permalink: /android-api/
 layout: home
 nav_order: 4
 parent: 5. Mobile
@@ -985,7 +985,7 @@ Avant de déployer un site ou une appli, il faut comprendre **comment la machine
 > **Étape suivante :** passe à **C7.1.U1** pour pratiquer les conversions et opérations logiques avant d’aborder le matériel.
 ---
 title: 7.2. LAN & adressage IP
-permalink: /deploiement/lan-adressage-ip/
+permalink: /deploiement/lan-ip/
 layout: home
 nav_order: 2
 has_children: true
