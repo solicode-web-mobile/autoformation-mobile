@@ -1,0 +1,3 @@
+- ajoute une information sur la table user , il est déja créer par Laravel
+- ajouter un résumé sur les type possible autre que "string" 
+    $table->string
