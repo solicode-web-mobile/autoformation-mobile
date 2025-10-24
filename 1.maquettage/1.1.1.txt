@@ -1,4 +1,0 @@
-- ajouter lé définition de MVP
-- expliquer l'importance de choisur un persona prioritaire
-- Donner dans la partie théorique un exemple de persona
-- demander dans le tutoriel de réaliser un persona
