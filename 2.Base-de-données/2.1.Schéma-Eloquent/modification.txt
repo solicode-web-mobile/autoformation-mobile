@@ -1,8 +1,0 @@
-# Modification de  2.1.2
-
-- Fixture : jeu de données fixe (souvent depuis un JSON).
-    - utiliser de puis csv file
-
-- ne pas parler de laravel model (nWidart)
-- il ne faut pas oublier les donnée de la table user
-- ajouter un explication sur la création des modules 
